@@ -6,14 +6,14 @@ fn main() {
 
 #[component]
 fn App() -> impl IntoView {
-    let (get_count, set_count) = create_signal(0);
+    let (count, set_count) = create_signal(0);
 
     view! {
         <button on:click=move |_| {
-            set_count(get_count() + 3);
+            set_count.update(|n| *n += 1);
         }>
 
-            "Click me: " {move || get_count()}
+            "Click me: " {count}
         </button>
     }
 }

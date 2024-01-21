@@ -22,6 +22,8 @@ trunk serve
 
 ## Ideas
 
+* frontend for nasa apis: https://api.nasa.gov/
+* 90s design system: https://www.designsystems.com/open-design-systems/
 * application managing todos
   * website code completely static -> easy and cheap hosting
   * content (todos) hosted on github
